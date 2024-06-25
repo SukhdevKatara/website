@@ -1,0 +1,76 @@
+.course {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    background-image: url('https://maacdelhi.com/img/courses-page-image/courses-page-img.webp');
+    background-size: cover; /* Fit background image to cover entire background */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200vh; /* Ensure the section takes at least the full viewport height */
+  }
+  
+  
+  .course h1 {
+    margin-bottom: 10px;
+  }
+  
+  .course p {
+    margin: 0 auto 20px;
+    max-width: 700px; /* Adjust this width as necessary */
+    line-height: 1.5;
+  }
+  
+  .course-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .course-earth-image {
+    width: 700px; /* Adjust as needed */
+    height: 700px; /* Adjust as needed */
+    margin-top: 200px;
+    
+  }
+  .course .course-earth-image.animated {
+    animation: earthAnimation 5s infinite alternate ease-in-out;
+  }
+  
+  .course .course-boy-image.animated {
+    animation: boyGirlAnimation 3s infinite alternate ease-in-out;
+  }
+  
+  .course .course-girl-image.animated {
+    animation: boyGirlAnimation 3s infinite alternate ease-in-out;
+  }
+  
+  @keyframes earthAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes boyGirlAnimation {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  
+  
+  .course-boy-image, .course-girl-image {
+    position: absolute;
+    width: 400px; 
+    height: auto;
+  }
+  
+  .course-boy-image {
+    top: 10%;
+    left: -10%;
+  }
+  
+  .course-girl-image {
+    top: 10%;
+    right: -20%;
+  }

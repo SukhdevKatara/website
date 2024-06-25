@@ -1,0 +1,74 @@
+/* ContactUs.css */
+
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 0px; /* Adjust based on Netbar height */
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  .contact-content {
+    width: 100%;
+    /* max-width: 1500px; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+  }
+  
+  /* EnquiryForm container styling, assuming EnquiryForm has a className 'enquiry-form' */
+  .enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 1200px) {
+    .contact-content h1 {
+      font-size: 2.2em;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .contact-content h1 {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-content {
+      padding: 15px;
+    }
+    .contact-content h1 {
+      font-size: 1.8em;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact-content h1 {
+      font-size: 1.5em;
+    }
+    .contact-content {
+      padding: 10px;
+    }
+    .enquiry-form {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
+  

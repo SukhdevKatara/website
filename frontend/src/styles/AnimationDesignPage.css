@@ -1,0 +1,420 @@
+.animation-page {
+    background-image: url('https://maacdelhi.com/img/course-detail-main-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: -20%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: "Atami", sans-serif;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.details span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-p p {
+    font-size: 1rem;
+    color: black;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    margin-left: -30%;
+    margin-top: -8%;
+    text-align: left;
+}
+
+.software-section {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 170px;
+}
+
+.software-section h2 {
+    font-size: 2em;
+    letter-spacing: .5px;
+    line-height: 1.2em;
+    color: black;
+    margin-bottom: 40px;
+    font-family: "Etna", sans-serif;
+}
+
+.software-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.soft-inr-div {
+    background: #FBFBFB;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, .25);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.soft-inr-div img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.soft-inr-div:hover img {
+    transform: scale(1.1);
+}
+
+.soft-inr-div p {
+    font-size: 1rem;
+    color: black;
+    margin: 0;
+    font-weight: bold;
+}
+
+.elective-section {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 60px;
+    padding-left: 20px;
+}
+
+.elective-section h2 {
+    font-size: 1.5em;
+    letter-spacing: .5px;
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: 900;
+    color: var(--h-color, black);
+    margin-top: 90px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.elective-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 90%;
+}
+
+.elective-img-bx {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    width: calc(33.33% - 15px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, transform 0.5s ease-in-out;
+}
+
+.elective-img-bx img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.elective-img-bx p {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.elective-img-bx:hover {
+    transform: translateY(-10px) rotateY(10deg);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.student-works-section {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 60px;
+    padding-left: 20px;
+}
+
+.student-works-section h2 {
+    font-size: 1.5em;
+    letter-spacing: .5px;
+    line-height: 1.2em;
+    text-align: left;
+    font-weight: 900;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 100px;
+}
+
+.student-works-section p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: -10px;
+}
+
+.student-works-container {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.student-works-container::-webkit-scrollbar {
+    display: none;
+}
+
+.student-work-item {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-work-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.student-work-item:hover img {
+    transform: scale(1.05);
+}
+
+.faq-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(185, 181, 181, 0.881);
+    margin-top: 100px;
+}
+
+.faq-section h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question.active {
+    background-color: #eaeaea;
+}
+
+.faq-answer {
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.dropdown-symbol {
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .dropdown-symbol {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+    .animation-page {
+        background-size: contain;
+    }
+
+    .details span {
+        font-size: 1.4rem;
+    }
+
+    .soft-inr-div {
+        width: calc(33.33% - 20px);
+    }
+
+    .elective-container {
+        gap: 5px;
+    }
+
+    .elective-img-bx {
+        width: calc(50% - 10px);
+    }
+
+    .student-work-item {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .animation-page {
+        background-size: cover;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .details span {
+        font-size: 1.2rem;
+    }
+
+    .about-p p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .software-section {
+        margin-left: 0;
+    }
+
+    .soft-inr-div {
+        width: calc(50% - 20px);
+    }
+
+    .elective-section {
+        margin-left: 0;
+    }
+
+    .elective-container {
+        flex-wrap: wrap;
+    }
+
+    .elective-img-bx {
+        width: calc(100% - 10px);
+    }
+
+    .student-works-section {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .student-work-item {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .animation-page {
+        background-size: cover;
+        height: 60vh;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .details span {
+        font-size: 1rem;
+    }
+
+    .about-p p {
+        font-size: 0.9rem;
+    }
+
+    .soft-inr-div {
+        width: calc(100% - 20px);
+    }
+
+    .elective-img-bx p {
+        font-size: 0.9rem;
+    }
+
+    .student-work-item {
+        width: calc(100% - 20px);
+    }
+
+    .faq-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .faq-section h2 {
+        font-size: 1.2em;
+    }
+
+    .faq-question {
+        font-size: 16px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+}

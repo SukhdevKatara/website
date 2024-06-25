@@ -1,0 +1,411 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.web-animation-page {
+  background-image: url("https://maacdelhi.com/img/apdmd-main-img.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.web-game-content {
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.web-game-content h1 {
+  font-size: 3.1em;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-family: "Atami", sans-serif;
+}
+
+.web-game-details {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.web-game-details span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.web-game-about-p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.web-game-about-p p {
+  font-size: 1rem;
+  color: black;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.web-game-software-section {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.web-game-software-section h2 {
+  font-size: 38px;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+  color: black;
+  margin-bottom: 40px;
+  font-family: "Etna", sans-serif;
+}
+
+.web-game-software-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.web-game-soft-inr-div {
+  background: #fbfbfb;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  width: calc(20% - 20px); /* Adjust width to fit five containers per line */
+  box-sizing: border-box;
+}
+
+.web-game-soft-inr-div img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.web-game-soft-inr-div:hover img {
+  transform: scale(1.1);
+}
+
+.web-game-soft-inr-div p {
+  font-size: 1rem;
+  color: black;
+  margin: 0;
+  font-weight: bold;
+}
+
+.web-game-elective-section {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.web-game-elective-section h2 {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+  text-align: left;
+  font-weight: 900;
+  color: var(--h-color, black);
+  margin-top: 90px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.web-game-elective-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: nowrap;
+  width: 90%;
+}
+
+.web-game-elective-img-bx {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  width: calc(33.33% - 15px); /* Ensure three items fit on one line */
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    transform 0.5s ease-in-out; /* Added 3D transition */
+}
+
+.web-game-elective-img-bx img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.web-game-elective-img-bx p {
+  font-size: 1.2rem;
+  color: #333;
+  padding: 10px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.web-game-elective-img-bx:hover {
+  transform: translateY(-10px) rotateY(10deg); /* Move up and rotate on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+.web-game-student-works-section {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.web-game-student-works-section h2 {
+  font-size: 30px;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+  text-align: left;
+  font-weight: 900;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.web-game-student-works-section p {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: left;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.web-game-student-works-container {
+  display: flex;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-y: hidden; /* Disable vertical scrolling */
+  white-space: nowrap;
+  position: relative;
+  padding: 20px 0; /* Add padding to the container */
+  scroll-behavior: smooth; /* Set the scrolling behavior */
+}
+
+.web-game-student-works-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+.web-game-student-work-item {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  width: auto; /* Set width to auto to adjust according to content */
+  padding: 10px; /* Add padding to the student work item */
+  border-radius: 5px; /* Add border radius */
+  background-color: #fff; /* Add background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.web-game-student-work-item img {
+  max-width: 100%;
+  border-radius: 5px; /* Apply border radius to images */
+  transition: transform 0.3s ease;
+}
+
+.web-game-student-work-item:hover img {
+  transform: scale(1.05);
+}
+
+.web-game-faq-section {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(185, 181, 181, 0.881);
+  margin-top: 100px;
+}
+
+.web-game-faq-section h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.web-game-faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.web-game-faq-item:last-child {
+  border-bottom: none;
+}
+
+.web-game-faq-question {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.web-game-faq-question.active {
+  background-color: #eaeaea;
+}
+
+.web-game-faq-answer {
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 600;
+}
+
+.web-game-dropdown-symbol {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.web-game-faq-question.active .dropdown-symbol {
+  transform: rotate(180deg);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .web-game-content h1 {
+    font-size: 2.5em;
+  }
+
+  .web-game-details span {
+    font-size: 1.4rem;
+  }
+
+  .web-game-software-section h2 {
+    font-size: 36px;
+  }
+
+  .web-game-soft-inr-div {
+    width: calc(25% - 20px); /* Adjust width for four containers per line */
+  }
+
+  .web-game-elective-img-bx {
+    width: calc(33.33% - 10px); /* Ensure three items fit on one line */
+  }
+}
+
+@media (max-width: 992px) {
+  .web-game-content h1 {
+    font-size: 2em;
+  }
+
+  .web-game-details {
+    flex-direction: column;
+  }
+
+  .web-game-details span {
+    font-size: 1.2rem;
+  }
+
+  .web-game-about-p p {
+    font-size: 0.9rem;
+  }
+
+  .web-game-software-section h2 {
+    font-size: 32px;
+  }
+
+  .web-game-soft-inr-div {
+    width: calc(33.33% - 20px); /* Adjust width for three containers per line */
+  }
+
+  .web-game-elective-img-bx {
+    width: calc(50% - 10px); /* Ensure two items fit on one line */
+  }
+
+  .web-game-student-works-container {
+    padding: 10px 0;
+  }
+
+  .web-game-faq-section {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .web-game-content h1 {
+    font-size: 1.8em;
+  }
+
+  .web-game-details span {
+    font-size: 1.1rem;
+  }
+
+  .web-game-about-p p {
+    font-size: 0.8rem;
+  }
+
+  .web-game-software-section h2 {
+    font-size: 30px;
+  }
+
+  .web-game-soft-inr-div {
+    width: calc(50% - 20px); /* Adjust width for two containers per line */
+  }
+
+  .web-game-elective-img-bx {
+    width: 100%; /* One item per line */
+  }
+
+  .web-game-faq-section {
+    width: 95%;
+  }
+}
+
+@media (max-width: 576px) {
+  .web-game-content h1 {
+    font-size: 1.5em;
+  }
+
+  .web-game-details span {
+    font-size: 1rem;
+  }
+
+  .web-game-about-p p {
+    font-size: 0.7rem;
+  }
+
+  .web-game-software-section h2 {
+    font-size: 28px;
+  }
+
+  .web-game-soft-inr-div {
+    width: 100%; /* One container per line */
+  }
+}

@@ -1,0 +1,171 @@
+/* GamingPage.css */
+
+.game-animation-page {
+  background-image: url("https://maacdelhi.com/img/adidg-main-img.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.game-content {
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-top: -20%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.game-content h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.game-details {
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.game-about-p {
+  padding: 20px;
+  background: #f9f9f9;
+  text-align: justify;
+}
+
+.game-about-p p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.game-software-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.game-software-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.game-soft-inr-div {
+  flex: 1 1 150px;
+  text-align: center;
+  margin: 10px;
+}
+
+.game-soft-inr-div img {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  display: block;
+}
+
+.game-faq-section {
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.game-faq-item {
+  margin-bottom: 10px;
+}
+
+.game-faq-question {
+  background: #e1e1e1;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-faq-question.active {
+  background: #d1d1d1;
+}
+
+.game-dropdown-symbol {
+  font-size: 1.2em;
+}
+
+.game-faq-answer {
+  padding: 10px;
+  background: white;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+}
+
+.game-student-works-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.game-student-works-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.game-student-work-item {
+  flex: 0 0 auto;
+  width: 200px;
+}
+
+.game-student-work-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .game-content h1 {
+    font-size: 2em;
+  }
+
+  .game-details {
+    font-size: 1em;
+  }
+
+  .game-about-p p {
+    font-size: 1em;
+  }
+
+  .game-software-container {
+    gap: 10px;
+  }
+
+  .game-student-work-item {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-content h1 {
+    font-size: 1.5em;
+  }
+
+  .game-details {
+    font-size: 0.9em;
+  }
+
+  .game-about-p p {
+    font-size: 0.9em;
+  }
+
+  .game-soft-inr-div img {
+    max-width: 80px;
+  }
+
+  .game-student-work-item {
+    width: 120px;
+  }
+}

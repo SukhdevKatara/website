@@ -1,0 +1,16 @@
+/* WhatsAppLink.css */
+.whatsapp-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #25D366;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .whatsapp-link:hover {
+    background-color: #20b955;
+  }
+  

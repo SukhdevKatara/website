@@ -1,0 +1,121 @@
+.main-container-sort {
+    width: 90%;
+    max-width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    background: url('../images//short-term-main-img.png') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .title {
+    margin-bottom: 20px;
+    margin-top: -250px;
+    font-size: 4em;
+    color: #fff;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .paragraph {
+    max-width: 600px;
+    color: black;
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin: 0 150px;
+  }
+  
+  .courses-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .course-card {
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 280px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .course-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .course-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .course-paragraph {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+  
+  .software-list {
+    margin-top: auto;
+  }
+  
+  .software-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px;
+  }
+  .software-item img{
+    size: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .main-container {
+      height: auto;
+    }
+  
+    .main-container-sort{
+      width: auto;
+    }
+
+    .paragraph{
+      margin: 0px;
+    }
+
+    .title {
+      font-size: 1.8em;
+    }
+  
+    .info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .paragraph {
+      text-align: left;
+    }
+  
+    .course-card {
+      flex: 1 1 100%;
+    }
+  }
+  

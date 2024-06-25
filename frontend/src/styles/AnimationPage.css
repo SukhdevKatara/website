@@ -1,0 +1,167 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Text Section Styling */
+.text-section {
+    flex: 1;
+    max-width: 500px;
+    margin: 20px;
+    text-align: left;
+}
+
+.text-section h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Video Section Styling */
+.video-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 26px;
+}
+
+/* Specific styling for right and left video sections */
+.video-section.video-left {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.video-section.video-right {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* Specific styling for right and left text sections */
+.text-section.text-left {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.text-section.text-right {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.view-detail {
+    background-color: #ffcc00;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+    box-shadow: 0px 10px 10px rgb(5, 4, 4);
+}
+
+.view-detail::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: red;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.view-detail:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.view-detail:hover {
+    background-color: red;
+    color: white;
+}
+
+.view-detail span {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-section, .video-section {
+        max-width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .text-section h1 {
+        font-size: 1.4rem;
+    }
+
+    .text-section p {
+        font-size: 0.9rem;
+    }
+
+    .view-detail {
+        padding: 15px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-section h1 {
+        font-size: 1.2rem;
+    }
+
+    .text-section p {
+        font-size: 0.8rem;
+    }
+
+    .view-detail {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-section h1 {
+        font-size: 1rem;
+    }
+
+    .text-section p {
+        font-size: 0.7rem;
+    }
+
+    .view-detail {
+        padding: 8px 12px;
+        font-size: 0.7rem;
+    }
+
+    .view-detail::before {
+        width: 200%;
+        height: 200%;
+    }
+}

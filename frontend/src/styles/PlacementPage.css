@@ -1,0 +1,169 @@
+.placement-page {
+    background: url('../images/placementbg.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .main-content-placement {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .page-heading {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .left-section, .right-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .why-maac-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .why-maac-paragraph {
+    text-align: center;
+  }
+  
+  .image-or-svg {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .company-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .company-logo {
+    width: 16.66%;
+    height: auto;
+    margin: 5px;
+  }
+  
+  @media (max-width: 1200px) {
+    .company-logo {
+      width: 16%;
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .company-logo {
+      width: 50%;
+    }
+
+    .placementimg{
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .company-logo {
+      width: 100%;
+    }
+    .placementimg{
+      width: 250px;
+    }
+  }
+  /* PlacementPage.css */
+.placement-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-content-placement {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.page-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.left-section, .right-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.why-maac-heading {
+  margin-bottom: 10px;
+}
+
+.why-maac-paragraph {
+  text-align: justify;
+}
+
+.image-or-svg {
+  width: 100%;
+  height: auto;
+}
+
+.company-logos-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  border: 1px solid black;
+}
+
+.company-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-row {
+  grid-column: span 6;
+  display: flex;
+  justify-content: space-around;
+}
+
+.company-logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .company-logos-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .last-row {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-logos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .last-row {
+    grid-column: span 2;
+  }
+}
