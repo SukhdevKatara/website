@@ -45,7 +45,7 @@ const Home = () => {
       </div>
       </div>
       <div className='bg1'>
-      <h2 className="centered-text">About MAAC</h2>
+      <h1 className="centered-text">About MAAC</h1>
         <h4 className="about-maac" >MAAC is the high-end 3D Animation & VFX education vertical of Aptech Ltd.</h4>
         <p className='row1'>
           Through its wide network of centres, MAAC has prepared thousands of students 
