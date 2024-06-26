@@ -26,12 +26,12 @@ import image from '../gifimages/image.gif'
 import image3 from '../gifimages/image3.png'
 
 
-import img1 from '../images/img1.png';
-import img2 from '../images/img2.png';
-import img3 from '../images/img3.png';
-import img4 from '../images/img4.png';
-import img5 from '../images/img5.png';
-import img6 from '../images/img6.png';
+import img1 from '../images/bottom.png';
+// import img2 from '../images/img2.png';
+// import img3 from '../images/img3.png';
+// import img4 from '../images/img4.png';
+// import img5 from '../images/img5.png';
+// import img6 from '../images/img6.png';
 
 const Home = () => {
   return (
@@ -154,12 +154,15 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <div className="how-it-works">
+    <div className='bottom'>
+      <img src={img1} alt="bottom" />
+    </div>
+    {/* <div className="how-it-works">
       <div className="how-it-text w-100 text-center">
         <h2 className="how">How it works</h2>
       </div>
       <div className="step-container">
-        {/* Step 1 */}
+        
         <div className="step-row">
           <div className="step-number">1</div>
           <div className="step-content">
@@ -171,7 +174,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Step 2 */}
+        
         <div className="step-row rev-row">
           <div className="step-number">2</div>
           <div className="step-image">
@@ -183,7 +186,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Step 3 */}
+        
         <div className="step-row">
           <div className="step-number">3</div>
           <div className="step-content">
@@ -195,7 +198,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Step 4 */}
+        
         <div className="step-row rev-row">
           <div className="step-number">4</div>
           <div className="step-image">
@@ -207,7 +210,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Step 5 */}
+        
         <div className="step-row">
           <div className="step-number">5</div>
           <div className="step-content">
@@ -219,7 +222,7 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Step 6 */}
+        
         <div className="step-row rev-row">
           <div className="step-number">6</div>
           <div className="step-image">
@@ -231,7 +234,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
     </div>
   );
 };
